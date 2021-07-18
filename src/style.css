@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #dd5e89;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.information {
+  display: flex;
+  flex: 1;
+}
+
+.thumbnail {
+  flex: 3;
+}
+
+#thumbnail {
+  width: 100%;
+  border-radius: 50%;
+  animation: spin 15s linear infinite;
+  animation-play-state: running;
+}
+
+.song-info {
+  flex: 7;
+  padding-left: 20px;
+}
+
+#name {
+  font-size: 20px;
+  padding: 5px 0 7px 0;
+}
+
+#singer {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.time-bar {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.time,
+.fill {
+  position: absolute;
+  height: 7px;
+  border-radius: 50px;
+}
+
+.time {
+  background: #ccc;
+  width: 100%;
+}
+
+.fill {
+  width: 0%;
+  background: #f54040;
+}
+
+.control {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  color: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  color: #dd5e89;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

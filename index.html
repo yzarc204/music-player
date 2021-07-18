@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Simple Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="information">
+            <div class="thumbnail">
+                <img id="thumbnail" src="src/images/bo_em_vao_balo.jpg" alt="">
+            </div> <!-- Thumbnail -->
+            <div class="song-info">
+                <h1 id="name">Bỏ em vào balo</h1>
+                <p id="singer">Singer: <span id="singer-name">Tân Trần</span></p>
+                <div class="time-bar">
+                    <div class="time"></div>
+                    <div class="fill" id="fill"></div>
+                </div>
+            </div> <!-- Song info -->
+        </div> <!-- Information -->
+        <div class="control">
+            <button class="btn" id="previous"><i class="fa fa-backward" aria-hidden="true"></i></button>
+            <button class="btn" id="play"><i id="state" class="fa fa-pause" aria-hidden="true"></i></button>
+            <button class="btn" id="next"><i class="fa fa-forward" aria-hidden="true"></i></button>
+        </div> <!-- Control -->
+    </div>
+
+    <audio id="player" autoplay></audio>
+
+    <script src="/src/js/songs.js"></script>
+    <script src="/src/js/elms.js"></script>
+    <script src="/src/js/functions.js"></script>
+    <script src="/src/js/player.js"></script>
+</body>
+</html>
